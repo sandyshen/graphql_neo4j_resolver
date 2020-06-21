@@ -24,7 +24,7 @@ public class Movie {
 	private Long id;
 	private String title;
 	private int released;
-	private String tagline;
+//	private String tagline;
 
 	@JsonIgnoreProperties("movie")
 	@Relationship(type = "ACTED_IN", direction = Relationship.INCOMING)
@@ -33,10 +33,10 @@ public class Movie {
 	public Movie() {
 	}
 
-	public Movie(String title, int released, String tagline) {
+	public Movie(String title, int released) {
 		this.title = title;
 		this.released = released;
-		this.tagline = tagline;
+//		this.tagline = tagline;
 	}
 
 
