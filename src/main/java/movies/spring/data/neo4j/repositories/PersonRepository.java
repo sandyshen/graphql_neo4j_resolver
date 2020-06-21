@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * @author pdtyreus
  * @author Mark Angrish
+ * @author Lianhua Shen
  */
 public interface PersonRepository extends Neo4jRepository<Person, Long> {
 

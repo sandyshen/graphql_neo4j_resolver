@@ -10,6 +10,7 @@ import org.neo4j.ogm.annotation.*;
 
 /**
  * @author Mark Angrish
+ * @author Lianhua Shen
  */
 @RelationshipEntity(type = "ACTED_IN")
 @Getter
@@ -34,21 +35,6 @@ public class Role {
 		this.person = actor;
 	}
 
-//	public Long getId() {
-//	    return id;
-//	}
-//
-//	public List<String> getRoles() {
-//	    return roles;
-//	}
-//
-//	public Person getPerson() {
-//	    return person;
-//	}
-//
-//	public Movie getMovie() {
-//	    return movie;
-//	}
 
     public void addRoleName(String name) {
         if (this.roles == null) {

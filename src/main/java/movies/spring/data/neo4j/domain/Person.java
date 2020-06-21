@@ -13,6 +13,7 @@ import org.neo4j.ogm.annotation.Relationship;
 
 /**
  * @author Mark Angrish
+ * @author Lianhua Shen
  */
 @NodeEntity
 @Getter
@@ -35,19 +36,4 @@ public class Person {
 		this.born = born;
 	}
 
-//	public Long getId() {
-//		return id;
-//	}
-//
-//	public String getName() {
-//		return name;
-//	}
-//
-//	public int getBorn() {
-//		return born;
-//	}
-//
-//	public List<Movie> getMovies() {
-//		return movies;
-//	}
 }

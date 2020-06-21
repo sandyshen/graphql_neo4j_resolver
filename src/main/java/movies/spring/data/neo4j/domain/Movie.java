@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
  * @author Mark Angrish
+ * @author Lianhua Shen
  */
 @NodeEntity
 @Getter
@@ -38,25 +39,6 @@ public class Movie {
 		this.tagline = tagline;
 	}
 
-//	public Long getId() {
-//		return id;
-//	}
-//
-//	public String getTitle() {
-//		return title;
-//	}
-//
-//	public int getReleased() {
-//		return released;
-//	}
-//
-//	public String getTagline() {
-//		return tagline;
-//	}
-//
-//	public List<Role> getRoles() {
-//		return roles;
-//	}
 
 	public void addRole(Role role) {
 		if (this.roles == null) {
