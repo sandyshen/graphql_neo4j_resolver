@@ -3,6 +3,7 @@ package movies.spring.data.neo4j.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.Getter;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
@@ -14,6 +15,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  * @author Mark Angrish
  */
 @NodeEntity
+@Getter
 public class Movie {
 
 	@Id
@@ -36,25 +38,25 @@ public class Movie {
 		this.tagline = tagline;
 	}
 
-	public Long getId() {
-		return id;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public int getReleased() {
-		return released;
-	}
-
-	public String getTagline() {
-		return tagline;
-	}
-
-	public List<Role> getRoles() {
-		return roles;
-	}
+//	public Long getId() {
+//		return id;
+//	}
+//
+//	public String getTitle() {
+//		return title;
+//	}
+//
+//	public int getReleased() {
+//		return released;
+//	}
+//
+//	public String getTagline() {
+//		return tagline;
+//	}
+//
+//	public List<Role> getRoles() {
+//		return roles;
+//	}
 
 	public void addRole(Role role) {
 		if (this.roles == null) {

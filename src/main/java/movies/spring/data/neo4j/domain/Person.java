@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.NodeEntity;
@@ -14,6 +15,7 @@ import org.neo4j.ogm.annotation.Relationship;
  * @author Mark Angrish
  */
 @NodeEntity
+@Getter
 public class Person {
 
     @Id
@@ -33,19 +35,19 @@ public class Person {
 		this.born = born;
 	}
 
-	public Long getId() {
-		return id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public int getBorn() {
-		return born;
-	}
-
-	public List<Movie> getMovies() {
-		return movies;
-	}
+//	public Long getId() {
+//		return id;
+//	}
+//
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public int getBorn() {
+//		return born;
+//	}
+//
+//	public List<Movie> getMovies() {
+//		return movies;
+//	}
 }

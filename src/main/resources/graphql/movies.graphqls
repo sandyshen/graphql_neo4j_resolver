@@ -1,0 +1,16 @@
+type Movie {
+    id: ID!,
+    title: String,
+    released: Int
+}
+type Query {
+    findByTitle(title:String):Movie
+}
+
+#type Mutation {
+#    createVehicle(type: String!, modelCode: String!, brandName: String, launchDate: String):Vehicle
+#}
+#
+#type Person {
+#
+#}

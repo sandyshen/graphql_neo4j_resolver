@@ -5,12 +5,14 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
 import org.neo4j.ogm.annotation.*;
 
 /**
  * @author Mark Angrish
  */
 @RelationshipEntity(type = "ACTED_IN")
+@Getter
 public class Role {
 
     @Id
@@ -32,21 +34,21 @@ public class Role {
 		this.person = actor;
 	}
 
-	public Long getId() {
-	    return id;
-	}
-
-	public List<String> getRoles() {
-	    return roles;
-	}
-
-	public Person getPerson() {
-	    return person;
-	}
-
-	public Movie getMovie() {
-	    return movie;
-	}
+//	public Long getId() {
+//	    return id;
+//	}
+//
+//	public List<String> getRoles() {
+//	    return roles;
+//	}
+//
+//	public Person getPerson() {
+//	    return person;
+//	}
+//
+//	public Movie getMovie() {
+//	    return movie;
+//	}
 
     public void addRoleName(String name) {
         if (this.roles == null) {
